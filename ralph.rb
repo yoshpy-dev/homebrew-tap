@@ -5,21 +5,21 @@
 class Ralph < Formula
   desc "Harness engineering scaffold and autonomous pipeline CLI"
   homepage "https://github.com/yoshpy-dev/harness-engineering-scaffolding-template"
-  version "3.1.0"
+  version "3.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoshpy-dev/harness-engineering-scaffolding-template/releases/download/v3.1.0/ralph_3.1.0_darwin_amd64.tar.gz"
-      sha256 "587e6ffb2c352cf20fd2f7c7a34a935facdca3f88ae3dcfc3347a6c5d93d8b78"
+      url "https://github.com/yoshpy-dev/harness-engineering-scaffolding-template/releases/download/v3.2.0/ralph_3.2.0_darwin_amd64.tar.gz"
+      sha256 "e0c80f28d10e1af7606c7934689f424738ed718d91288dce76e41e2c99af0d95"
 
       define_method(:install) do
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoshpy-dev/harness-engineering-scaffolding-template/releases/download/v3.1.0/ralph_3.1.0_darwin_arm64.tar.gz"
-      sha256 "c9f0b0f1b7eadc9739d90e9e7cd781b85fdcd548f8c129437abff1e14b352d5f"
+      url "https://github.com/yoshpy-dev/harness-engineering-scaffolding-template/releases/download/v3.2.0/ralph_3.2.0_darwin_arm64.tar.gz"
+      sha256 "a2fc9901a61d5fb3e5423494184634c95fffa1590356088bbac7a0e4a402bbd2"
 
       define_method(:install) do
         bin.install "ralph"
@@ -29,15 +29,15 @@ class Ralph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshpy-dev/harness-engineering-scaffolding-template/releases/download/v3.1.0/ralph_3.1.0_linux_amd64.tar.gz"
-      sha256 "7a939211b29e1a277812038ec7a875a13769603b0ddf355e959c2767277179db"
+      url "https://github.com/yoshpy-dev/harness-engineering-scaffolding-template/releases/download/v3.2.0/ralph_3.2.0_linux_amd64.tar.gz"
+      sha256 "c333a08415824eceb7a07574021ee1e9bcc10b73c7382e99545818304545a28a"
       define_method(:install) do
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshpy-dev/harness-engineering-scaffolding-template/releases/download/v3.1.0/ralph_3.1.0_linux_arm64.tar.gz"
-      sha256 "4c0d5cbf67649c441140b9eeb39cc6949a13f4feb0f2b1d8bb0aa0f38ab0ad64"
+      url "https://github.com/yoshpy-dev/harness-engineering-scaffolding-template/releases/download/v3.2.0/ralph_3.2.0_linux_arm64.tar.gz"
+      sha256 "ff9430404f48bc4f5355b70a503665a3e670b5f8a6ef51422f8e85aedfc707cb"
       define_method(:install) do
         bin.install "ralph"
       end
