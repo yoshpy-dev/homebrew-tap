@@ -5,21 +5,21 @@
 class Ralph < Formula
   desc "ralph — a CLI for harness engineering with Claude Code"
   homepage "https://github.com/yoshpy-dev/ralph"
-  version "3.9.0"
+  version "3.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoshpy-dev/ralph/releases/download/v3.9.0/ralph_3.9.0_darwin_amd64.tar.gz"
-      sha256 "c3e21d5b5770906603cd9516fee0ac587f9c04712767f75daad4bc873f523feb"
+      url "https://github.com/yoshpy-dev/ralph/releases/download/v3.9.1/ralph_3.9.1_darwin_amd64.tar.gz"
+      sha256 "c125a22c537c35a531ca4c880ac66d20c24e2445c048d8bf139c8eeb5453363f"
 
       define_method(:install) do
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoshpy-dev/ralph/releases/download/v3.9.0/ralph_3.9.0_darwin_arm64.tar.gz"
-      sha256 "df58caad59ad2ed050ec8a336cb1b7bceded530b7320e9279da8e72b9ead70df"
+      url "https://github.com/yoshpy-dev/ralph/releases/download/v3.9.1/ralph_3.9.1_darwin_arm64.tar.gz"
+      sha256 "894d9ee9b049415edb29e1592b68ccd933d3f19efa8f11c5ae142c6d8b9f1cb4"
 
       define_method(:install) do
         bin.install "ralph"
@@ -29,15 +29,15 @@ class Ralph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshpy-dev/ralph/releases/download/v3.9.0/ralph_3.9.0_linux_amd64.tar.gz"
-      sha256 "6582fda8f2a472b6238e24e72469449fef76874a6b84abe765f7153a862db47e"
+      url "https://github.com/yoshpy-dev/ralph/releases/download/v3.9.1/ralph_3.9.1_linux_amd64.tar.gz"
+      sha256 "852e5b17f3d033c0b774ee028e00a2c266cbf7eb04b11849549f4e9e444d1f45"
       define_method(:install) do
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoshpy-dev/ralph/releases/download/v3.9.0/ralph_3.9.0_linux_arm64.tar.gz"
-      sha256 "12296f0afe0af5f0939cd85425da16cf7f547f2544294209cd4d61f8abb61353"
+      url "https://github.com/yoshpy-dev/ralph/releases/download/v3.9.1/ralph_3.9.1_linux_arm64.tar.gz"
+      sha256 "8a9e39cc8bdca83e9754342861005b1f3f46e011916a3f2892d984d4691fb6bb"
       define_method(:install) do
         bin.install "ralph"
       end
